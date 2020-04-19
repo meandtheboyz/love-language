@@ -1,8 +1,20 @@
+$foregrxound : #ff6464
 $foreground : #ff6464
 
 *
   font-family: Verdana
   font-size: 15px
+body
+  background: #f5f5f5
+  margin: 0
+
+header
+  padding: 20px 0
+  text-align: center
+  background: $foreground
+  color: white
+  margin-bottom: 20px
+  box-shadow: #969696 0px 5px 15px 4px 
 
 .question-wrapper .question
   padding: 5px 0
@@ -62,3 +74,29 @@ textarea
   border-radius: 3px
   outline: none
   border: none
+input[type=text]::placeholder,
+textarea::placeholder
+  color: #8a0000a2
+
+.questions-wrapper
+  width: 980px
+  margin: 0 auto
+  background: #fff
+  padding: 30px
+  border-top-left-radius: 20px
+  border-top-right-radius: 20px
+
+button.submit-question
+  border: none
+  box-shadow: none
+  background: $foreground
+  color: white
+  padding: 10px 20px
+  margin: auto
+  cursor: pointer
+
+.submit-wrapper 
+  display: flex
+  margin: 50px 0 20px
+
+

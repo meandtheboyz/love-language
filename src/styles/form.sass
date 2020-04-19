@@ -1,0 +1,64 @@
+$foreground : #ff6464
+
+*
+  font-family: Verdana
+  font-size: 15px
+
+.question-wrapper .question
+  padding: 5px 0
+  display: block
+
+input[type=radio],
+input[type=checkbox]
+  :display none
+
+.radio, .checkbox
+  margin: 10px
+  display: flex
+
+.radio-wrapper label .label,
+.checkbox-wrapper label .label
+  margin: auto 0
+   
+
+label span.radio .checked,
+label span.checkbox .checked
+  transition: width  0.1s, height 0.1s
+  display: block
+  margin: auto
+  background: #fff
+  width: 0px
+  height: 0px
+
+label span.radio .checked,
+input[type=radio] + label span.radio  
+  border-radius: 50px
+
+input[type=checkbox] + label span.checkbox
+  border-radius: 3px  
+
+input[type=radio] + label, 
+input[type=checkbox] + label
+  display: flex
+
+input[type=checkbox] + label span.checkbox,
+input[type=radio] + label span.radio      
+  width: 20px
+  height: 20px
+  display: inline-flex
+  background: $foreground
+  position: relative
+      
+input[type=radio]:checked + label span.radio .checked,
+input[type=checkbox]:checked + label span.checkbox .checked
+  width: 12px
+  height: 12px
+
+input[type=text],
+textarea
+  background: $foreground
+  color: white
+  padding: 10px
+  border-radius: 3px
+  outline: none
+  border: none
